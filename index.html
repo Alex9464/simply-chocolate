@@ -3,77 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Simply Chocolate</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a href="" class="logo"><span>Simply</span>Chocolate</a>
-        <div class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-          </ul>
+        <div class="header-wrap">
+          <a href="" class="logo"
+            ><span>Simply&#160;</span>Chocolate
+            <svg class="logo__icon" width="21" height="21">
+              <use href="./img/sprite.svg#icon-chocolate"></use>
+            </svg>
+          </a>
+          <button class="mob-menu__open btn" type="button">
+            <svg width="28" height="28">
+              <use href="./img/sprite.svg#icon-burger_menu"></use>
+            </svg>
+          </button>
         </div>
-      </div>
-      <div class="social">
-        <ul class="soc__list">
-          <li class="soc__item">
-            <a href="" class="soc__link">
-              <svg class="soc__icon"><use href=""></use></svg>
-            </a>
-          </li>
-          <li class="soc__item">
-            <a href="" class="soc__link">
-              <svg class="soc__icon"><use href=""></use></svg>
-            </a>
-          </li>
-          <li class="soc__item">
-            <a href="" class="soc__link">
-              <svg class="soc__icon"><use href=""></use></svg>
-            </a>
-          </li>
-        </ul>
+        <div class="header__nav-wrap">
+          <div class="nav tablet header">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+              <li class="nav__item">
+                <a href="" class="nav__link">How it’s made?</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Chocolate is loved</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social tablet">
+            <ul class="soc__list">
+              <li class="soc__item">
+                <a href="" class="soc__link">
+                  <svg class="soc__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link">
+                  <svg class="soc__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link">
+                  <svg class="soc__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
+      <!--              Hero              -->
       <div class="hero">
-        <h1 class="hero__title">
-          Treat yourself or a loved one to our finest ingredients for a moment
-          of pure delight!
-        </h1>
-        <ul class="hero__list">
-          <li class="hero__item">
-            <button type="button" class="hero__btn"></button>
-          </li>
-          <li class="hero__item">
-            <button type="button" class="hero__btn"></button>
-          </li>
-        </ul>
-        <button type="button"></button>
+        <div class="container">
+          <h1 class="hero__title">
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
+          </h1>
+          <div class="hero-wrap">
+            <ul class="hero__list">
+              <li class="hero__item">
+                <button type="button" class="hero__btn button btn">
+                  Buy now
+                </button>
+              </li>
+              <li class="hero__item">
+                <button type="button" class="hero__btn button btn">
+                  How it’s made
+                </button>
+              </li>
+            </ul>
+            <a href="#sale" class="scroll-btn btn">scroll down<svg class="scroll-icon" width="28" height="28">
+                <use href="./img/sprite.svg#icon-arrow-down"></use>
+              </svg></a>
+          </div>
+        </div>
       </div>
 
       <!--                 Benefits                 -->
       <section class="benefits">
         <div class="container">
-          <h2></h2>
+          <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits__list">
             <li class="benefits__item">
-              <svg class="benefits__icon"><use href=""></use></svg>
-              <h3 class="benefits__title"></h3>
-              <p class="benefits__text"></p>
+              <div class="before">
+                <div class="benefits_wrap">
+                <svg class="benefits__icon" width="32" height="32">
+                  <use href="./img/sprite.svg#icon-choco"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Unsurpassed taste</h3>
+              <p class="benefits__text">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+              </div>
             </li>
             <li class="benefits__item">
-              <svg class="benefits__icon"><use href=""></use></svg>
-              <h3 class="benefits__title"></h3>
-              <p class="benefits__text"></p>
+              <div class="before">
+                <div class="benefits_wrap">
+                <svg class="benefits__icon" width="32" height="32">
+                  <use href="./img/sprite.svg#icon-icon-coin"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Affordable price</h3>
+              <p class="benefits__text">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+              </div>
             </li>
             <li class="benefits__item">
-              <svg class="benefits__icon"><use href=""></use></svg>
-              <h3 class="benefits__title"></h3>
-              <p class="benefits__text"></p>
+              <div class="before">
+                <div class="benefits_wrap">
+                <svg class="benefits__icon" width="32" height="32">
+                  <use href="./img/sprite.svg#icon-icon-spoon"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Own production</h3>
+              <p class="benefits__text">
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -82,15 +184,105 @@
       <!--                 Taste                 -->
       <section class="taste">
         <div class="container">
-          <h2 class="taste__title"></h2>
+          <h2 class="section__title">
+            It all adds up to one exceptional
+            <span class="accent">taste</span> sensation
+          </h2>
           <ul class="taste__list">
-            <li class="taste_item"><a href="" class="taste__link"></a></li>
-            <li class="taste_item"><a href="" class="taste__link"></a></li>
-            <li class="taste_item"><a href="" class="taste__link"></a></li>
-            <li class="taste_item"><a href="" class="taste__link"></a></li>
-            <li class="taste_item"><a href="" class="taste__link"></a></li>
-            <li class="taste_item"><a href="" class="taste__link"></a></li>
-            <li class="taste_item"><a href="" class="taste__link"></a></li>
+            <li class="taste__item">
+              <a href="" class="taste__link">
+                <picture class="taste-img">
+                  <source
+                    srcset="./img/png/img-1.png 1x"
+                    media="(max-width: 1175px)"
+                  />
+                  <img src="./img/png/img-1.png" alt="chocolate" />
+                  <svg class="taste-icon" width="24" height="24"><use href="./img/sprite.svg#icon-arrow-right2"></use></svg>
+                </picture>
+                <h3 class="taste__title">Milk Chocolate</h3></a
+              >
+            </li>
+            <li class="taste__item white">
+              <a href="" class="taste__link"
+                ><picture>
+                  <source
+                    srcset="./img/png/img-2.png 1x"
+                    media="(max-width: 1175px)"
+                  />
+                  <img src="./img/png/img-2.png" alt="botle of milk" />
+                  <svg class="taste-icon" width="24" height="24"><use href="./img/sprite.svg#icon-arrow-right2"></use></svg>
+
+                </picture>
+                <h3 class="taste__title black-text">Milk</h3></a
+              >
+            </li>
+            <li class="taste__item black">
+              <a href="" class="taste__link"
+                ><picture>
+                  <source
+                    srcset="./img/png/img-3.png 1x"
+                    media="(max-width: 1175px)"
+                  />
+                  <img src="./img/png/img-3.png" alt="nuts" />
+                  <svg class="taste-icon" width="24" height="24"><use href="./img/sprite.svg#icon-arrow-right2"></use></svg>
+                </picture>
+                <h3 class="taste__title">Nuts</h3></a
+              >
+            </li>
+            <li class="taste__item white">
+              <a href="" class="taste__link"
+                ><picture>
+                  <source
+                    srcset="./img/png/img-4.png 1x"
+                    media="(max-width: 1175px)"
+                  />
+                  <img src="./img/png/img-4.png" alt="chocolate drops" />
+                  <svg class="taste-icon" width="24" height="24"><use href="./img/sprite.svg#icon-arrow-right2"></use></svg>
+                </picture>
+                <h3 class="taste__title black-text">
+                  Semi - Sweet Chocolate
+                </h3></a
+              >
+            </li>
+            <li class="taste__item tablet">
+              <a href="" class="taste__link"
+                ><picture>
+                  <source
+                    srcset="./img/png/img-5.png 1x"
+                    media="(max-width: 1175px)"
+                  />
+                  <img src="./img/png/img-5.png" alt="cacao" />
+                  <svg class="taste-icon" width="24" height="24"><use href="./img/sprite.svg#icon-arrow-right2"></use></svg>
+                </picture>
+                <h3 class="taste__title">Cacao</h3></a
+              >
+            </li>
+            <li class="taste__item white tablet">
+              <a href="" class="taste__link"
+                ><picture>
+                  <source
+                    srcset="./img/png/img-6.png 1x"
+                    media="(max-width: 1175px)"
+                  />
+                  <img src="./img/png/img-6.png" alt="raspberry" />
+                  <svg class="taste-icon" width="24" height="24"><use href="./img/sprite.svg#icon-arrow-right2"></use></svg>
+                </picture>
+                <h3 class="taste__title black-text">Raspberry</h3></a
+              >
+            </li>
+            <li class="taste__item black tablet">
+              <a href="" class="taste__link"
+                ><picture>
+                  <source
+                    srcset="./img/png/img-7.png 1x"
+                    media="(max-width: 1175px)"
+                  />
+                  <img src="./img/png/img-7.png" alt="coconut" />
+                  <svg class="taste-icon" width="24" height="24"><use href="./img/sprite.svg#icon-arrow-right2"></use></svg>
+                </picture>
+                <h3 class="taste__title">Coconut Oil</h3></a
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -98,31 +290,112 @@
       <!--              Production              -->
       <section class="production">
         <div class="container">
-          <h2 class="production__title"></h2>
-          <h3 class="production__list-title"></h3>
-          <ul class="production__list">
-            <li class="production__item"></li>
-            <li class="production__item"></li>
-            <li class="production__item"></li>
-            <li class="production__item"></li>
-            <li class="production__item"></li>
-          </ul>
+          <h2 class="section__title">
+            How it’s <span class="accent">made?</span>
+          </h2>
+          <div class="production-wrap">
+            <picture class="production-img">
+              <source
+                srcset="./img/jpg/image_mob.jpg 1x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="./img/tab/image_tab.jpg 1x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/desc/image_desk.jpg 1x"
+                media="(min-width: 1200px)"
+              />
+              <img src="./img/desc/image_desk.jpg" alt="hot chocolate" />
+              <svg class="play-icon" width="14" height="15"><use href="./img/sprite.svg#icon-play3"></use></svg>
+            </picture>
+            <div class="production__content">
+              <h3 class="production__title">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="production__list">
+                <li class="production__item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="production__item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="production__item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="production__item">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="production__item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!--               Products               -->
       <section class="products">
         <div class="container">
-          <h2 class="products__title"></h2>
+          <h2 class="section__title">
+            Our <span class="accent">products</span>
+          </h2>
           <ul class="products__list">
-            <li class="productsitem"></li>
-            <li class="productsitem"></li>
-            <li class="productsitem"></li>
-            <li class="productsitem"></li>
-            <li class="productsitem"></li>
-            <li class="productsitem"></li>
-            <li class="productsitem"></li>
-            <li class="productsitem"></li>
+            <li class="products__item">
+              <img src="./img/jpg/img-1.jpg" alt="" />
+              <h3 class="products__title">Orange</h3>
+              <p class="products__text">Dark chocolate</p>
+              <button type="button" class="price-btn">45 uah</button>
+            </li>
+            <li class="products__item">
+              <img src="./img/jpg/img-2.jpg" alt="" />
+              <h3 class="products__title">Aple&cranberry</h3>
+              <p class="products__text">Milk Chocolate</p>
+              <button type="button" class="price-btn">50 uah</button>
+            </li>
+            <li class="products__item">
+              <img src="./img/jpg/img-3.jpg" alt="" />
+              <h3 class="products__title">Lime&sea salt</h3>
+              <p class="products__text">Dark chocolate</p>
+              <button type="button" class="price-btn">66 uah</button>
+            </li>
+            <li class="products__item">
+              <img src="./img/jpg/img-4.jpg" alt="" />
+              <h3 class="products__title">Pineapple</h3>
+              <p class="products__text">Dark chocolate</p>
+              <button type="button" class="price-btn">54 uah</button>
+            </li>
+            <li class="products__item">
+              <img src="./img/jpg/img-5.jpg" alt="" />
+              <h3 class="products__title">Classic</h3>
+              <p class="products__text">Milk chocolate</p>
+              <button type="button" class="price-btn">45 uah</button>
+            </li>
+            <li class="products__item">
+              <img src="./img/jpg/img-6.jpg" alt="" />
+              <h3 class="products__title">Honey</h3>
+              <p class="products__text">Milk chocolate</p>
+              <button type="button" class="price-btn">50 uah</button>
+            </li>
+            <li class="products__item">
+              <img src="./img/jpg/img-7.jpg" alt="" />
+              <h3 class="products__title">Roasted fruits</h3>
+              <p class="products__text">Dark chocolate</p>
+              <button type="button" class="price-btn">66 uah</button>
+            </li>
+            <li class="products__item">
+              <img src="./img/jpg/img-8.jpg" alt="" />
+              <h3 class="products__title">Classic</h3>
+              <p class="products__text">White chocolate</p>
+              <button type="button" class="price-btn">54 uah</button>
+            </li>
           </ul>
         </div>
       </section>
@@ -130,11 +403,87 @@
       <!--                Sellers                -->
       <section class="sellers">
         <div class="container">
-          <h2 class="sellers__title"></h2>
+          <h2 class="section__title">
+            <span class="accent">Top</span> sellers
+          </h2>
           <ul class="sellers__list">
-            <li class="sellers__item"></li>
-            <li class="sellers__item"></li>
-            <li class="sellers__item"></li>
+            <li class="sellers__item">
+              <div class="drop">
+                <picture>
+                  <source
+                    srcset="./img/jpg/img-1_mob1x.jpg 1x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./img/tab/img-1_tab1x.jpg 1x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./img/desc/img-1_desk2x.jpg 1x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/desc/img-1_desk2x.jpg"
+                    alt="chocolate with coffee and nuts"
+                  />
+                </picture>
+                <p class="drop-text">
+                  Chocolate with nuts is a delectable combination that brings
+                  together the smoothness of chocolate and the crunchiness of
+                  nuts. Whether it's milk chocolate, dark chocolate, or white
+                  chocolate, the addition of nuts adds a whole new dimension of
+                  flavor and texture.
+                </p>
+              </div>
+              <h3 class="sellers__title">Chocolate with nuts</h3>
+            </li>
+            <li class="sellers__item tablet">
+              <div class="drop">
+                <picture>
+                  <source
+                    srcset="./img/tab/img-2.jpg 1x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./img/desc/img-2.jpg 1x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/desc/img-2.jpg"
+                    alt="drop chocolate with mint and almaund"
+                  />
+                </picture>
+                <p class="drop-text">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
+              <h3 class="sellers__title">Chocolate with fruits</h3>
+            </li>
+            <li class="sellers__item desctop">
+              <div class="drop">
+                <picture>
+                  <source
+                    srcset="./img/desc/img-3.jpg 1x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img/desc/img-3.jpg"
+                    alt="dark and milk chocolate"
+                  />
+                </picture>
+                <p class="drop-text">
+                  Dark chocolate is a rich and indulgent treat that is beloved
+                  by many chocolate enthusiasts. It is made from cocoa beans,
+                  which are roasted, ground, and then processed to produce
+                  chocolate liquor. Dark chocolate contains a higher percentage
+                  of cocoa solids compared to milk chocolate.
+                </p>
+              </div>
+              <h3 class="sellers__title">Dark chocolate</h3>
+            </li>
           </ul>
         </div>
       </section>
@@ -142,61 +491,195 @@
       <!--                 Review                 -->
       <section class="review">
         <div class="container">
-          <h2 class="review__title"></h2>
+          <h2 class="section__title">
+            <span class="accent">Chocolate</span> is loved
+          </h2>
           <ul class="review__list">
             <li class="review__item">
-              <h3 class="review__name"></h3>
-              <p class="review__text"></p>
+              <img src="./img/png/Ellipse.png" alt="" />
+              <h3 class="review__title">Victoria Dobrzhanska</h3>
+              <p class="review__text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
             </li>
-            <li class="review__item">
-              <h3 class="review__name"></h3>
-              <p class="review__text"></p>
+            <li class="review__item tablet">
+              <img src="./img/png/Ellipse (1).png" alt="" />
+              <h3 class="review__title">Nazar Babenko</h3>
+              <p class="review__text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
             </li>
-            <li class="review__item">
-              <h3 class="review__name"></h3>
-              <p class="review__text"></p>
+            <li class="review__item desctop">
+              <img src="./img/png/Ellipse (2).png" alt="" />
+              <h3 class="review__title">Olena Kampusch</h3>
+              <p class="review__text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
             </li>
           </ul>
-          <button type="button">Leave a review</button>
+          <button type="button" class="review-btn btn" id="sale" data-open-modal>Leave a review</button>
         </div>
       </section>
     </main>
+
+    <!--                 Footer                 -->
     <footer class="footer">
-      <div class="footer__top">
-        <h2 class="footer-title">Chocolate a delicious cure for a bad day</h2>
-        <div class="social">
-          <p class="soc__text"></p>
-          <ul class="soc__list">
-            <li class="soc__item"><a href=""></a></li>
-            <li class="soc__item"><a href=""></a></li>
-            <li class="soc__item"><a href=""></a></li>
-          </ul>
+      <div class="container">
+        <div class="footer__top">
+          <h2 class="footer-title">
+            <span class="accent">Chocolate</span> a delicious cure for a bad day
+          </h2>
+          <div class="foter__desctop-wrap">
+            <div class="contacts">
+              <p class="contacts__text">Contact us</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="tel:+380684439426" class="contacts__link"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a href="mailto:simplychoc@gmail.com" class="contacts__link"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="social">
+              <p class="soc__text">Social networks</p>
+              <ul class="soc__list">
+                <li class="soc__item">
+                  <a href="" class="soc__link">
+                    <svg class="soc__icon" width="24" height="24">
+                      <use href="./img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a href="" class="soc__link">
+                    <svg class="soc__icon" width="24" height="24">
+                      <use href="./img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc__item">
+                  <a href="" class="soc__link">
+                    <svg class="soc__icon" width="24" height="24">
+                      <use href="./img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="contacts">
-          <p class="contacts__text"></p>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a href="" class="contacts__link"></a>
-            </li>
-            <li class="contacts__item">
-              <a href="" class="contacts__link"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-            <li class="nav__item"><a href="" class="nav__link"></a></li>
-          </ul>
-        </div>
-        <div class="form">
-            <label><input type="text"></label>
-            <button type="button">Subscribe</button>
+        <div class="footer__bottom">
+          <div class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+              <li class="nav__item">
+                <a href="" class="nav__link">How it’s made?</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Chocolate is loved</a>
+              </li>
+            </ul>
+          </div>
+          <div class="form">
+            <label
+              ><input
+                type="text"
+                class="footer-input"
+                placeholder="Enter your email"
+            /></label>
+            <button type="button" class="hero__btn button btn">
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
     </footer>
+    <!------------------------- Backdrop ------------------------->
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-close-modal>
+          <svg class="modal__icon-close" width="12" height="12">
+            <use href="./img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <!--------------------------------- Form --------------------------------->
+        <p class="modal-form__title">Leave a review about <span class="accent">our chocolate</span></p>
+        <form class="modal-form js-speaker-form">
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="user-name">Name</label>
+            <div class="modal-form__input-wrap">
+              <input class="modal-form__input" type="text" name="user-name" id="user-name" />
+              <svg class="modal-form__icon" width="18" height="18">
+                <use href="./img/sprite.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="mail">Email</label>
+            <div class="modal-form__input-wrap">
+              <input class="modal-form__input" type="email" name="mail" id="mail" />
+              <svg class="modal-form__icon" width="18" height="18">
+                <use href="./img/sprite.svg#icon-envelop"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="tel">Phone number</label>
+            <div class="modal-form__input-wrap">
+              <input class="modal-form__input" type="tel" name="tel" id="tel" />
+              <svg class="modal-form__icon" width="18" height="18">
+                <use href="./img/sprite.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form__textarea">
+            <label class="modal-form__label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form__input textarea"
+              name="user-comment"
+              placeholder="Enter text"
+              id="user-comment"
+            ></textarea>
+          </div>
+
+          <div class="modal-form__contrackt">
+            <input
+              type="checkbox"
+              class="modal-form__checkbox visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="modal-form__check">
+              <span class="modal-form__checkbox-custom">
+                <svg class="modal-form__checkbox-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-Checkmark"></use>
+                </svg>
+              </span>
+              <span class="modal-form__checkbox-text">
+                I accept the terms and conditions of the
+                <a class="modal-form__link" href="">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn button hero__btn btn-mdl">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
